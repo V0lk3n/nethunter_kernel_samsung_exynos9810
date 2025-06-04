@@ -4787,7 +4787,7 @@
 		};
 	};
 
-	exynos-pm {
+	exynos-pm@14050000 {
 		compatible = "samsung,exynos-pm";
 		reg = <0x0 0x14050000 0x1000 0x0 0x10101200 0x100>;
 		reg-names = "gpio_alive_base", "gicd_ispendrn_base";
