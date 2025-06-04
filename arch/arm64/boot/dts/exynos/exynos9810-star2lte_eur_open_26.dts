@@ -13448,7 +13448,7 @@
 		status = "okay";
 	};
 
-	exynos_console_debugger {
+	exynos_console_debugger@10440000 {
 		compatible = "samsung,exynos_console_debugger";
 		reg = <0x0 0x10440000 0x100>;
 		interrupts = <0x0 0x18d 0x0>;
