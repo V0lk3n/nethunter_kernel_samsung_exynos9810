@@ -8949,7 +8949,7 @@
 		};
 	};
 
-	acpm {
+	acpm@14020000 {
 		compatible = "samsung,exynos-acpm";
 		#address-cells = <0x2>;
 		#size-cells = <0x1>;
@@ -8960,7 +8960,7 @@
 		peritimer-cnt = <0xffff>;
 	};
 
-	acpm_ipc {
+	acpm_ipc@14100000 {
 		compatible = "samsung,exynos-acpm-ipc";
 		#address-cells = <0x2>;
 		#size-cells = <0x1>;
