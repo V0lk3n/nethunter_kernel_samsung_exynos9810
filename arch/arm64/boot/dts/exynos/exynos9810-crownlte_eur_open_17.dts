@@ -12112,7 +12112,7 @@
 		phandle = <0x310>;
 	};
 
-	mif_pdata {
+	mif_pdata@10000 {
 		reg = <0x0 0x10000 0x0>;
 		compatible = "sec_modem,modem_pdata";
 		status = "okay";
