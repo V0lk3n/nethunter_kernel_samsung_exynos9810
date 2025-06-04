@@ -26,22 +26,22 @@
 			phandle = <0x147>;
 		};
 
-		modem_if {
+		modem_if@f0000000 {
 			compatible = "exynos,modem_if";
 			reg = <0x0 0xf0000000 0x9200000>;
 		};
 
-		cp_ram_logging {
+		cp_ram_logging@f9200000 {
 			compatible = "exynos,cp_ram_logging";
 			reg = <0x0 0xf9200000 0x2000000>;
 		};
 
-		zswap_debug {
+		zswap_debug@91300000 {
 			compatible = "exynos,zswap_debug";
 			reg = <0x0 0x91300000 0x1000>;
 		};
 
-		sec_debug_magic {
+		sec_debug_magic@80000000 {
 			compatible = "exynos,sec_debug_magic";
 			reg = <0x0 0x80000000 0x1000>;
 		};
@@ -53,7 +53,7 @@
 			phandle = <0x19d>;
 		};
 
-		seclog_mem {
+		seclog_mem@c0000000 {
 			compatible = "exynos,seclog";
 			reg = <0x0 0xc0000000 0x80000>;
 		};
@@ -77,61 +77,61 @@
 			id = <0x1>;
 		};
 
-		secure_camera {
+		secure_camera@e1900000 {
 			compatible = "exynos8890-ion,secure_camera";
 			ion,untouchable;
 			reg = <0x0 0xe1900000 0x1e00000>;
 			id = <0xb>;
 		};
 
-		exynos_ss {
+		exynos_ss@fda00000 {
 			compatible = "exynos,exynos_ss";
 			reg = <0x0 0xfda00000 0x1c08000>;
 			#address-cells = <0x2>;
 			#size-cells = <0x1>;
 
-			header {
+			header@fda00000 {
 				compatible = "exynos_ss,header";
 				reg = <0x0 0xfda00000 0x10000>;
 			};
 
-			log_kernel {
+			log_kernel@fda10000 {
 				compatible = "exynos_ss,log_kernel";
 				reg = <0x0 0xfda10000 0x200000>;
 			};
 
-			log_platform {
+			log_platform@fdc10000 {
 				compatible = "exynos_ss,log_platform";
 				reg = <0x0 0xfdc10000 0x400000>;
 			};
 
-			log_sfr {
+			log_sfr@fe010000 {
 				compatible = "exynos_ss,log_sfr";
 				reg = <0x0 0xfe010000 0x200000>;
 			};
 
-			log_cachedump {
+			log_cachedump@fe210000 {
 				compatible = "exynos_ss,log_cachedump";
 				reg = <0x0 0xfe210000 0xa00000>;
 			};
 
-			log_etm {
+			log_etm@fec10000 {
 				compatible = "exynos_ss,log_etm";
 				reg = <0x0 0xfec10000 0x100000>;
 			};
 
-			log_pstore {
+			log_pstore@fed10000 {
 				compatible = "exynos_ss,log_pstore";
 				reg = <0x0 0xfed10000 0x8000>;
 			};
 
-			log_kevents {
+			log_kevents@fed18000 {
 				compatible = "exynos_ss,log_kevents";
 				reg = <0x0 0xfed18000 0x800000>;
 			};
 		};
 
-		fimc_is_lib {
+		fimc_is_lib@ff800000 {
 			compatible = "exynos,fimc_is_lib";
 			reg = <0x0 0xff800000 0x800000>;
 			kernel_virt = <0xffffff80 0xfa000000>;
