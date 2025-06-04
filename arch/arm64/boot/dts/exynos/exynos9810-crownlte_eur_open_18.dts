@@ -13262,7 +13262,7 @@
 		linux,phandle = <0x318>;
 		phandle = <0x318>;
 
-		pend,disp-det {
+		pend,disp-det@11050a04 {
 			reg = <0x0 0x11050a04 0x4>;
 			pend-bit = <0x2>;
 		};
