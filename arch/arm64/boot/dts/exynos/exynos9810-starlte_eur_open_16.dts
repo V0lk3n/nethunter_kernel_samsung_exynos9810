@@ -5131,11 +5131,11 @@
 		linux,phandle = <0x1f6>;
 		phandle = <0x1f6>;
 
-		te_eint {
+		te_eint@10830a14 {
 			reg = <0x0 0x10830a14 0x4>;
 		};
 
-		cam-stat {
+		cam-stat@1406404c {
 			reg = <0x0 0x1406404c 0x4>;
 		};
 	};
