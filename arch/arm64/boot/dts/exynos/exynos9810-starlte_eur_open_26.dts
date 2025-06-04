@@ -5304,7 +5304,7 @@
 		linux,phandle = <0x189>;
 		phandle = <0x189>;
 
-		dwc3 {
+		dwc3@10c00000 {
 			compatible = "synopsys,dwc3";
 			reg = <0x0 0x10c00000 0x10000>;
 			interrupts = <0x0 0xf4 0x0>;
