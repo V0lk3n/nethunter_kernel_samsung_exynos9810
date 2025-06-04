@@ -11673,7 +11673,7 @@
 		phandle = <0x306>;
 	};
 
-	cmu_ewf {
+	cmu_ewf@1a240000 {
 		compatible = "samsung,exynos-cmuewf";
 		#address-cells = <0x2>;
 		#size-cells = <0x1>;
