@@ -7975,18 +7975,18 @@
 		linux,phandle = <0xf9>;
 		phandle = <0xf9>;
 
-		ufs-phy {
+		ufs-phy@11124000 {
 			#address-cells = <0x2>;
 			#size-cells = <0x1>;
 			ranges;
 			reg = <0x0 0x11124000 0x800>;
 
-			ufs-phy-sys {
+			ufs-phy-sys@14060724 {
 				reg = <0x0 0x14060724 0x4>;
 			};
 		};
 
-		ufs-io-coherency {
+		ufs-io-coherency@11010700 {
 			#address-cells = <0x2>;
 			#size-cells = <0x1>;
 			ranges;
